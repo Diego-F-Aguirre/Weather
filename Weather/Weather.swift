@@ -38,7 +38,7 @@ class Weather {
             if let main = arrayUsingWeatherKey[0][Weather.kMainKey] as? String {
                 self.main = main
             }
-            if let description = jsonDictionary[Weather.kDescriptionKey] as? String {
+            if let description = arrayUsingWeatherKey[0][Weather.kDescriptionKey] as? String {
                 self.description = description
             }
         }
